@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Título / Logo -->
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                android:src="@mipmap/ic_launcher"
+                app:tint="#6200EE"
+                android:contentDescription="Logo de la app" />
+            <!-- Nota: Si @mipmap/ic_launcher no tiene transparencia, quita app:tint -->
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:text="Moon Beauty Store"
+                android:textColor="#333333"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- MENÚ DE NAVEGACIÓN -->
+
+            <!-- Botón: Lista de Productos -->
+            <Button
+                android:id="@+id/btnGoToProducts"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:text="Ver Productos"
+                android:textSize="16sp"
+                app:icon="@android:drawable/ic_menu_search"
+                app:iconGravity="textStart" />
+
+            <!-- Botón: Carrito de Compras -->
+            <Button
+                android:id="@+id/btnGoToCart"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#009688"
+                android:text="Mi Carrito"
+                android:textSize="16sp"
+                app:icon="@android:drawable/ic_menu_view"
+                app:iconGravity="textStart" />
+
+            <!-- Botón: Perfil de Usuario -->
+            <Button
+                android:id="@+id/btnGoToProfile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#FF9800"
+                android:text="Mi Perfil"
+                android:textSize="16sp"
+                app:icon="@android:drawable/ic_menu_my_calendar"
+                app:iconGravity="textStart" />
+
+            <!-- Botón: Gestión de Usuarios (Admin) -->
+            <Button
+                android:id="@+id/btnGoToUsers"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#673AB7"
+                android:text="Gestión de Usuarios"
+                android:textSize="16sp"
+                app:icon="@android:drawable/ic_menu_info_details"
+                app:iconGravity="textStart" />
+
+            <!-- Botón: Cerrar Sesión / Salir -->
+            <Button
+                android:id="@+id/btnLogout"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:text="Cerrar Sesión"
+                android:textColor="#D32F2F"
+                app:strokeColor="#D32F2F" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Reemplaza ESTE valor por tu API key real SOLO en tu máquina local -->
+    <string name="google_maps_key">AIzaSyAsyw7_zD1TbvqUWQbOKGsh8ITKGxrl7vM</string>
+</resources>

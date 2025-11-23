@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvProductName" type="id" />
+    <item name="tvProductDescription" type="id" />
+    <item name="tvProductPrice" type="id" />
+    <item name="btnAddToCart" type="id" />
+    <item name="textUserName" type="id" />
+    <item name="textUserEmail" type="id" />
+    <item name="textUserRole" type="id" />
+    <item name="buttonEditUser" type="id" />
+    <item name="buttonDeleteUser" type="id" />
+    <item name="editUserName" type="id" />
+    <item name="editUserRole" type="id" />
+</resources>
